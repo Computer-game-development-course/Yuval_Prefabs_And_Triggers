@@ -1079,7 +1079,6 @@ GameObject:
   - component: {fileID: 1363711266115913}
   - component: {fileID: 1363711266115910}
   - component: {fileID: 1363711266115911}
-  - component: {fileID: 212522841112678494}
   m_Layer: 0
   m_Name: PlayerSpaceship
   m_TagString: Player
@@ -1162,8 +1161,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggeringTag: Enemy
-  hitPoints: 3
-  hitPointsText: {fileID: 0}
 --- !u!114 &1363711266115911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1210,26 +1207,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggeringTag: Enemy
---- !u!224 &4756833480714881
-RectTransform:
+--- !u!4 &4756833480714881
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363711266115907}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.11, y: -3.24, z: 0}
   m_LocalScale: {x: 0.648, y: 0.573, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1811610585}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.11, y: -3.24}
-  m_SizeDelta: {x: 4, y: 4}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &95657521628761207
 Animator:
   serializedVersion: 5
@@ -1303,14 +1296,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!222 &212522841112678494
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363711266115907}
-  m_CullTransparentMesh: 1
 --- !u!1001 &8392271928369018371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1400,8 +1385,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2070287832}
+  - {fileID: 4756833480714881}
   - {fileID: 552903278}
   - {fileID: 945324280}
   - {fileID: 187464075}
   - {fileID: 1144032736}
-  - {fileID: 4756833480714881}
